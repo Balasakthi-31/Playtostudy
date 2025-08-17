@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayToStudy - Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="protectPage(); checkLogin();">
+
+  <header>
+    <h1>🎮 PlayToStudy Quiz</h1>
+    <div id="welcomeUser"></div>
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <h2>Upload Study Material</h2>
+      <form id="uploadForm">
+        <input type="file" name="file" id="fileInput" accept=".pdf,image/*" required>
+        <button type="submit" class="btn">Upload & Generate Quiz</button>
+      </form>
+    </section>
+
+    <section id="quizSection" class="quiz-container" style="display:none;">
+      <h2>Generated Quiz</h2>
+      <div id="quizArea"></div>
+      <button id="submitQuiz" class="btn">Submit Quiz</button>
+      <div id="quizResult" class="result"></div>
+    </section>
+  </main>
+
+  <script src="auth.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-brand span {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px;
+  color: #fff !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffe082 !important;
+}
+
+/* Containers */
+.container {
+  max-width: 1100px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+h1.text-center {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.btn-primary:hover {
+  background-color: #125ca1;
+}
+
+.btn-success {
+  background-color: #2e7d32;
+  border-color: #2e7d32;
+}
+
+.btn-success:hover {
+  background-color: #205723;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  border: none;
+}
+
+/* Forms */
+form input[type="file"],
+form input,
+form textarea {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25,118,210,0.4);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+footer img {
+  vertical-align: left;
+  margin-right: 8px;
+}
+
+.quiz-container {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.question-box {
+  margin-bottom: 20px;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: green;
+}
+
+/* Add glow effect on hover */
+.service-item, .btn {
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.service-item:hover, .btn:hover {
+  box-shadow: 0 0 20px rgb(87, 3, 95); /* Blue glow */
+  transform: translateY(-5px); /* Optional: lift effect */
+}
+
+.service-item:active, .btn:active {
+  box-shadow: 0 0 25px rgba(87, 3, 95); /* Stronger glow on click/touch */
+  transform: translateY(-2px); /* Slight press effect */
+}
